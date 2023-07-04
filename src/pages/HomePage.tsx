@@ -3,8 +3,11 @@
 import Lottie from "lottie-react";
 import office from "../assets/lottie/office.json";
 import { CustomButton } from "@/components";
+import { useState } from "react";
 
 const HomePage = () => {
+  const [login, setLogin] = useState(false);
+
   return (
     <section className="pt-28 pb-24 lg:pt-36 lg:pb-32">
       <div className="container">
@@ -15,9 +18,17 @@ const HomePage = () => {
             <p className="text-primary text-xl max-w-xl">
               This application is used for <span className="text-white">Employee Attendance</span> and <span className="text-white">Employee Management</span>.
             </p>
-            <div className="flex">
-              <CustomButton title="Login" containerStyles="border-black bg-white hover:bg-[#ededed]" textStyles="text-black hover:text-[#262626]" />
-              <CustomButton title="Employee Management" to="/employeeManagement" containerStyles="ml-5 border-borderColor bg-bgColor hover:border-primary" textStyles="text-white" />
+            <div className="flex flex-col md:flex-row my-3">
+              {login ? (
+                <>
+                  <CustomButton title="Attend" to="/attend" containerStyles="border-black bg-white hover:bg-[#ededed]" textStyles="text-black hover:text-[#262626]" />
+                  <CustomButton title="Employee Management" to="/employeeManagement" containerStyles="md:ml-5 border-borderColor bg-bgColor hover:border-primary" textStyles="text-white" />
+                </>
+              ) : (
+                <>
+                  <CustomButton title="Login for Attendance or Management" to="/login" containerStyles="border-black bg-white hover:bg-[#ededed]" textStyles="text-black hover:text-[#262626]" />
+                </>
+              )}
             </div>
           </div>
           <div className="hidden w-full px-4 selft-center md:block lg:w-1/2 border-2 border-borderColor rounded-md p-4 bg-bgColor">

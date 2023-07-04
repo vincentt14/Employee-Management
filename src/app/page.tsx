@@ -1,9 +1,14 @@
+import { Footer, Navbar } from "@/components";
 import HomePage from "@/pages/HomePage";
 
 export default function Home() {
   return (
-    <main>
-      <HomePage />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <HomePage />
+      </main>
+      <Footer />
+    </>
   );
 }
