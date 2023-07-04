@@ -10,12 +10,17 @@ const HomePage = () => {
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full self-center px-4 lg:w-1/2">
-            <h1 className="text-5xl font-bold text-secondary">Employee Management</h1>
-            <hr className="w-[100px] my-3 p-1 bg-secondary border-0 rounded-sm" />
-            <p className="text-primary text-xl max-w-xl">This application is used for employee attendance and employee management</p>
-            <CustomButton />
+            <h1 className="py-1 text-5xl font-bold bg-gradient-to-r from-red-600 to-secondary inline-block text-transparent bg-clip-text">Employee Management</h1>
+            <hr className="w-[200px] my-3 p-1 bg-bgColor border border-borderColor rounded-sm" />
+            <p className="text-primary text-xl max-w-xl">
+              This application is used for <span className="text-white">Employee Attendance</span> and <span className="text-white">Employee Management</span>.
+            </p>
+            <div className="flex">
+              <CustomButton title="Login" containerStyles="border-black bg-white hover:bg-[#ededed]" textStyles="text-black hover:text-[#262626]" />
+              <CustomButton title="Employee Management" to="/employeeManagement" containerStyles="ml-5 border-borderColor bg-bgColor hover:border-primary" textStyles="text-white" />
+            </div>
           </div>
-          <div className="hidden w-full px-4 selft-center md:block lg:w-1/2 border rounded-md p-4 blur-sm">
+          <div className="hidden w-full px-4 selft-center md:block lg:w-1/2 border-2 border-borderColor rounded-md p-4 bg-bgColor">
             <Lottie animationData={office} style={{ width: "400px", height: "400px" }} className="mx-auto blur-none" />
           </div>
         </div>
