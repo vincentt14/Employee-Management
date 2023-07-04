@@ -6,7 +6,7 @@ import { CustomButton } from "@/components";
 import { useState } from "react";
 
 const HomePage = () => {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
 
   return (
     <section className="pt-28 pb-24 lg:pt-36 lg:pb-32">
@@ -29,6 +29,24 @@ const HomePage = () => {
                   <CustomButton title="Login for Attendance or Management" to="/login" containerStyles="border-black bg-white hover:bg-[#ededed]" textStyles="text-black hover:text-[#262626]" />
                 </>
               )}
+            </div>
+            <div>
+              <div className="mb-6 grid max-w-lg grid-cols-2 gap-0 border-2 border-borderColor bg-bgColor p-6 text-primary md:max-w-md rounded-md">
+                <div className="grid grid-cols-3">
+                  <div className="col-1 col-span-1 flex items-center justify-center text-2xl font-bold text-primary">12</div>
+                  <div className="col-2 col-span-2">
+                    <p className="text-xs lg:text-base">Employee</p>
+                    <p className="text-xs lg:text-base">Counts</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-3">
+                  <div className="col-1 col-span-1 flex items-center justify-center text-2xl font-bold text-primary">12</div>
+                  <div className="col-2 col-span-2">
+                    <p className="text-xs lg:text-base">Attendance</p>
+                    <p className="text-xs lg:text-base">is made</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="hidden w-full px-4 selft-center md:block lg:w-1/2 border-2 border-borderColor rounded-md p-4 bg-bgColor">

@@ -5,7 +5,7 @@ import Link from "next/link";
 import CustomButton from "./CustomButton";
 
 const Navbar = () => {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   const [toggle, setToggle] = useState(false);
   const refHead = useRef<HTMLDivElement>(null);
 
@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
-              <Link href="/" className="cursor-pointer text-primary font-bold text-lg block py-6 hover:text-secondary">
+              <Link href="/" className="cursor-pointer text-primary font-bold text-lg block py-6 hover:text-white">
                 Employee Management.
               </Link>
             </div>
