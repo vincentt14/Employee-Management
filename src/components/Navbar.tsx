@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div ref={refHead} className="bg-transparant absolute top-0 left-0 w-full flex items-center z-10 transition duration-150 ease-in-out">
+      <div ref={refHead} className="bg-transparant absolute top-0 left-0 w-full flex items-center z-10 transition duration-150 ease-in-out pt-2">
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
@@ -68,7 +68,7 @@ const Navbar = () => {
                     <CustomButton
                       title={login ? "Logout" : "Login"}
                       to={login ? "/logout" : "/login"}
-                      containerStyles={login ? "md:ml-5 border-borderColor bg-bgColor hover:border-primary lg:my-0 py-[10px] mx-8" : "border-black bg-white hover:bg-[#ededed] lg:my-0 py-[10px] mx-8"}
+                      containerStyles={login ? "ml-5 lg:ml-0 border-borderColor bg-bgColor hover:border-primary lg:my-0 py-[10px]" : "border-black bg-white hover:bg-[#ededed] lg:my-0 py-[10px]"}
                       textStyles={login ? "text-white" : "text-black hover:text-[#262626]"}
                     />
                   </li>
