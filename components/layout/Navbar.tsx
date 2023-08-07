@@ -55,7 +55,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between relative">
             <div className="md:px-4">
               <Link href="/" className="flex cursor-pointer text-white font-bold text-lg py-5 md:py-6 item items-center justify-center gap-2">
-                Employee Management
+                MG
               </Link>
             </div>
             <div className="flex items-center px-4">

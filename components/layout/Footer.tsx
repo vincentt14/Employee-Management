@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { toast } from "react-hot-toast";
-import { SiNextdotjs, SiRedux } from "react-icons/si";
-import { BiLogoTypescript, BiLogoTailwindCss } from "react-icons/bi";
+import { SiFirebase, SiNextdotjs, SiRedux } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 
 interface IContact {
   label: string;
@@ -55,8 +55,8 @@ export const Footer = () => {
       logo: <BiLogoTypescript className="text-white w-8 h-8" />,
     },
     {
-      name: "Tailwind",
-      logo: <BiLogoTailwindCss className="text-white w-8 h-8" />,
+      name: "Firebase",
+      logo: <SiFirebase className="text-white w-8 h-8" />,
     },
   ];
 
@@ -88,7 +88,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-5 w-full flex-col place-items-center font-medium md:flex md:w-1/3">
             <ul>
-              <h2 className="pb-2 text-4xl font-bold text-white">Employee Management</h2>
+              <h2 className="pb-2 text-4xl font-bold text-white">MG</h2>
               <hr className="w-32 my-3 p-1 bg-black border border-borderColor rounded-sm" />
               <h3 className="mb-4 mt-5 text-2xl font-bold text-white">Founder</h3>
               {contacts.map((contact) => (

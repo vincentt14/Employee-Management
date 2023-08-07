@@ -9,7 +9,7 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Employee Management",
+  title: "EMG",
   description: "A Work From Home Employee Management App",
 };
 
